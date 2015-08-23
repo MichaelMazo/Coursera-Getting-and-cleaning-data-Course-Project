@@ -78,5 +78,5 @@ Need to fix names of first and second columns
 colnames(A)[c(1,2)]=Names[c(1,2)]
 ```
 
-#Writing set of averages to a file
+#Writing set of averages to  file "Averages.txt"
 write.table(A,file="Averages.txt",row.name=FALSE)
