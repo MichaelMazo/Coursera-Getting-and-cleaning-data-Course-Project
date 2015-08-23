@@ -1,0 +1,47 @@
+Step 1. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+Step 2. Means and standard deviations of these signals were estimated.
+
+Step 3. Finally, data from step to was averaged for each subject and each activity type.
+
+
+Code Book.
+
+1."Subject" (integer), number of a person in the research
+
+2."Activity" (factor), activity type
+        1 WALKING
+        2 WALKING_UPSTAIRS
+        3 WALKING_DOWNSTAIRS
+        4 SITTING
+        5 STANDING
+        6 LAYING
+
+The following variables are of “numeric” class.
+Each variable name consists of 3 parts
+	1. Signal type:
+		BodyAcc - body acceleration
+		GravityAcc - gravity acceleration
+		Gyro - angular velocity
+	2. Function used
+		mean - mean
+		std - standard deviation
+	3. Dimension: X, Y,Z
+3.”BodyAcc-mean-X"
+4. ”BodyAcc-mean-Y"
+5. ”BodyAcc-mean-Z",
+6. ”BodyAcc-std-X"
+7. ”BodyAcc-std-Y"
+8. ”BodyAcc-std-Z",
+9. ”GravityAcc-mean-X"
+10. ”GravityAcc-mean-Y"
+11. ”GravityAcc-mean-Z",
+12. ”GravityAcc-std-X"
+13. ”GravityAcc-std-Y"
+14. ”GravityAcc-std-Z",
+15. "Gyro-mean-X"
+16. ”Gyro-mean-Y"
+17. ”Gyro-mean-Z",
+18. ”Gyro-std-X"
+19. ”Gyro-std-Y”
+20. ”Gyro-std-Z"
